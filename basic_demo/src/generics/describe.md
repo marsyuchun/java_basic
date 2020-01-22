@@ -8,4 +8,21 @@
 
 2、泛型参数也被叫做类型参数，用作泛型方法得到的返回值参数类型的占位符；
 
-3、
+3、泛型方法方法体的声明和其他方法一样。注意类型参数只能代表引用型类型，不能是原始类型。
+
+#### 有界类型参数
+声明类型参数得上界和下界
+```java
+public class Minmax{
+    public static <T extends Comparable<T>> T maxMin(T x, T y, T z){
+        return x;    
+    }
+}
+```
+如上 T的上界为Comparable<T> 中的值
+
+### 泛型类
+
+
+
+

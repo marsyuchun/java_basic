@@ -32,6 +32,6 @@ public class Triangle {
 
     public static void main(String[] args) {
         delta1(3);
-        delta1(4);
+        delta1(20);
     }
 }

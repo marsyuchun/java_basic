@@ -27,3 +27,35 @@
     无论你与否自定义构造方法，所有的类都有构造方法，因为Java自动提供了一个无参数构造方法， 一旦自己定义了构造方法，Java自动提供的默认无参数构造方法就会失效。
 #### 标准代码
     JavaBean 是 Java语言编写类的一种标准规范。符合 JavaBean 的类，要求类必须是具体的和公共的，并且具有无 参数的构造方法，提供用来操作成员变量的 set 和 get 方法。
+    
+### day_07 Scanner类、Random类和ArrayList类
+
+#### 一、API
+API(Application Programming Interface)，应用程序编程接口。
+
+#### 二、Random类
+查看类
+- java.util.Random :该类需要 import导入使后使用。
+
+查看构造方法
+- public Random() :创建一个新的随机数生成器。
+
+查看成员方法
+- public int nextInt(int n) :返回一个伪随机数，范围在 0 (包括)和 指定值 n (不包括)之间的
+int 值。
+
+#### 三、ArrayList
+ArrayList是大小可变的数组的实现，存储在内的数据称为元素
+
+
+
+
+
+
+
+
+
+
+
+
+

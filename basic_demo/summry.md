@@ -47,8 +47,21 @@ int 值。
 #### 三、ArrayList
 ArrayList是大小可变的数组的实现，存储在内的数据称为元素
 
+### day_08 String类、static关键字、Arrays类、 Math类
 
+#### 第一章 String类
+public int length () :返回此字符串的长度。
+public String concat (String str) :将指定的字符串连接到该字符串的末尾。
+public char charAt (int index) :返回指定索引处的 char值。
+public int indexOf (String str) :返回指定子字符串第一次出现在该字符串内的索引。
+public String substring (int beginIndex) :返回一个子字符串，从beginIndex开始截取字符串到字符
+串结尾。
+public String substring (int beginIndex, int endIndex) :返回一个子字符串，从beginIndex到
+endIndex截取字符串。含beginIndex，不含endIndex。
 
+#### 第二章 static关键字
+static 关键字，可以修饰变量、方法和代码块。在使用的过程中，其主要目的还是想在不创建对象的情况
+下，去调用方法。下面将介绍两个工具类，来体现static 方法的便利。
 
 
 

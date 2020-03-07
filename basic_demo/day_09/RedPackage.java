@@ -34,6 +34,7 @@ public class RedPackage {
         gm3.openRedpackage(sendList,gm3.getUserName());
         gm4.openRedpackage(sendList,gm4.getUserName());
 
+        // 查看余额
         go.show();
         gm1.show();
         gm2.show();

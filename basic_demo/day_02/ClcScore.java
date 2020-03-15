@@ -1,4 +1,4 @@
-package basic_demo.day02_dateType;
+package basic_demo.day_02;
 
 public class ClcScore {
     public static void ClcScore(int score){

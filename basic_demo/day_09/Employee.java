@@ -1,7 +1,7 @@
 package basic_demo.day_09;
 
 public class Employee {
-    public String getName() {
+    public final String getName() {
         return name;
     }
 

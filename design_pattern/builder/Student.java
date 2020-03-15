@@ -1,6 +1,6 @@
-package builder;
+package design_pattern.builder;
 
-public class Student {
+public  class Student {
     private String name;
     private String email;
     private int age;
@@ -13,7 +13,7 @@ public class Student {
 
     // 构造方法
     public static Student.Builder builder(){
-        return new Student.Builder();
+        return  new Student.Builder();
     }
 
     // 构造器接口

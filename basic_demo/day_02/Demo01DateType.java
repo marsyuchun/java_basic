@@ -1,4 +1,4 @@
-package basic_demo.day02_dateType;
+package basic_demo.day_02;
 
 public class Demo01DateType {
     public static String getType(Object test) {

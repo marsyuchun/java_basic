@@ -1,6 +1,4 @@
-package basic_demo.day02_dateType;
-
-import java.util.Scanner;
+package basic_demo.day_02;
 
 public class Switch {
     public static void dateClc(int weekday){

@@ -29,7 +29,7 @@ public class CalValue {
 
     public static void main(String[] args) {
         System.out.println("20年收益差距");
-        dayValue(0.00027,365,1000);
+        dayValue(0.00025,365,1000);
 
         System.out.println("初始投资差距");
 

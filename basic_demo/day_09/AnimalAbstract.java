@@ -11,7 +11,7 @@ abstract public class AnimalAbstract {
         this.name = name;
     }
 
-    public abstract void eat(String name);
+    protected abstract void eat(String name);
 
 
 }

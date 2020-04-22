@@ -1,21 +1,13 @@
-package day01_api;
+package day03_list;
 
 import java.util.Objects;
 
 /**
- * Created by yanyuchun on 2020/3/22
+ * Created by yanyuchun on 2020/4/2
  */
-public class Person {
+public class Person extends Object implements Comparable<Person> {
     private String name;
     private int age;
-
-    public Person() {
-    }
-
-    public Person(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
 
     public String getName() {
         return name;
@@ -33,12 +25,12 @@ public class Person {
         this.age = age;
     }
 
-    @Override
-    public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
+    public Person() {
+    }
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 
     @Override
@@ -53,5 +45,20 @@ public class Person {
     @Override
     public int hashCode() {
         return Objects.hash(name, age);
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
+
+
+    @Override
+    public int compareTo(Person o) {
+
+        return this.getAge() - o.getAge();
     }
 }

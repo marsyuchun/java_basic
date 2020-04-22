@@ -12,7 +12,12 @@ public class ArrayDemo {
         Boolean[] arry1 = new Boolean[4];
         Integer[] arry2 = new Integer[]{1,2,3,4,5};
         Double[] arry3 = new Double[5];
-        print(arry1);
+        int[] arr = {1,2,3,4,5};
+        int[] clone = arr.clone();
+
+
+        System.out.println(clone.toString());
+        clone.equals(arr);
         print(arry2);
         print(arry3);
 

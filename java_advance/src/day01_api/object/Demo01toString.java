@@ -1,4 +1,4 @@
-package day01_api;
+package day01_api.object;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -6,7 +6,7 @@ import java.util.Scanner;
 /**
  * Created by yanyuchun on 2020/3/22
  */
-public class Demo01toString {
+public class Demo01toString /* extends Object */{
     public static void main(String[] args) {
         Person p1 = new Person("黄忠",70);
         Person p2 = new Person("张飞",40);

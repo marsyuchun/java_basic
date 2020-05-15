@@ -8,4 +8,8 @@ public class Test1 {
         System.out.println("第一次提交代码");
         System.out.println("第二次提交代码");
     }
+
+    void tostring(){
+        System.out.println("aaaa");
+    }
 }

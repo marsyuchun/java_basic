@@ -11,6 +11,10 @@ public class ParentClass {
         return name;
     }
 
+    public static void print(){
+        System.out.println("父类的static方法～");
+    }
+
     public void setName(String name) {
         this.name = name;
     }

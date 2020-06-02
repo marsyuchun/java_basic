@@ -1,4 +1,4 @@
-package work_test.jira_handdler;
+package work_test.jira_handler;
 
 /**
  * Created by yanyuchun on 2020/5/13

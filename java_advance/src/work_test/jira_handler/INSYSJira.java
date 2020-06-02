@@ -1,4 +1,4 @@
-package work_test.jira_handdler;
+package work_test.jira_handler;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -202,7 +202,7 @@ public class INSYSJira {
         System.out.println(jiraList.size());
         System.out.println(jiraList);
 //        System.out.println(chongxiaoList.size());
-        String targetPath = "java_advance/src/work_test/jira_handdler/notinchongxiao.txt";
+        String targetPath = "work_test/jira_handler/notinchongxiao.txt";
         outputString(jiraList, targetPath);
     }
 

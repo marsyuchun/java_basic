@@ -17,6 +17,7 @@ public class SubClass extends ParentClass{
         this.name = name;
     }
 
+    @Override
     public void showName(){
         System.out.println(super.getName());
         System.out.println(this.getName());
@@ -25,5 +26,6 @@ public class SubClass extends ParentClass{
     public static void main(String[] args) {
         SubClass sc = new SubClass();
         sc.showName();
+        sc.print();
     }
 }

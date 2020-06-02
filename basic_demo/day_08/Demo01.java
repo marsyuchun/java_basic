@@ -17,6 +17,8 @@ public class Demo01 {
 
         char[] data = {'a','b','c','d','e','f','h'};
         String s4 = new String(data,2,4);
+        System.out.println("s4:"+s4);
+        System.out.println(s4.substring(0,2));
         // boolean equals(Object obj):比较字符串的内容是否相同
 //        System.out.println(s2.toCharArray());
 //        System.out.println(s2.toCharArray()[1]);

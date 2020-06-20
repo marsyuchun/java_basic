@@ -32,7 +32,7 @@ public class TCPServer {
                         BufferedReader br = new BufferedReader(new InputStreamReader(is));
                         String line = br.readLine();
 //                        System.out.println(line);
-                        String[] arr = line.split(" ");
+                        String[] arr = line.split("");
                         String htmlPath = arr[1].substring(1);
 
                         // 创建本地字节输入流

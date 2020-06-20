@@ -53,7 +53,18 @@ public class TwoSum {
         int target = 26;
 //        int[] result = twoSum(nums, target);
 //        print(result);
-        int[] result1 = twoSum1(nums, target);
+        int[] result1 = twoSum3(nums, target);
         print(result1);
+    }
+
+    private int[] twoSum3(int[] nums, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            if (map.containsKey(target - nums[i])) {
+                return new int[]{i, map.get(target - nums[i])};
+            }
+            map.put(nums[i], i);
+        }
+        throw new RuntimeException("没有符合要求的结果");
     }
 }

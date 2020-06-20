@@ -18,9 +18,16 @@ public class Demo01 {
         System.out.println(in);
     }
 
+    public static void changeAbs(Integer s, Function<Integer, Integer> fun){
+        Integer apply = fun.apply(s);
+        System.out.println(apply);
+    }
+
     public static void main(String[] args) {
         String s = "1234";
         change(s, str -> Integer.parseInt(str));
+        int a = -5;
+        changeAbs(a,num->Math.abs(num));
 
     }
 

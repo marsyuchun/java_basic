@@ -30,7 +30,7 @@ public class TCPServer {
                         BufferedReader br = new BufferedReader(new InputStreamReader(is));
                         // 提取文件路径
                         String line = br.readLine();
-//            System.out.println(line);
+            System.out.println(line);
                         String[] arr = line.split(" ");
                         String pathName = arr[1].substring(1);
                         if (!pathName.endsWith(".ico")) {

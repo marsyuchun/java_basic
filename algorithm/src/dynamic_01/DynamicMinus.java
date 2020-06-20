@@ -21,7 +21,7 @@ import java.util.ArrayList;
 public class DynamicMinus {
     int sum = 0;
     int[] nums = {19, 17, 6, 7};
-    int target = 20;
+    int target = 30;
     int m = 0;
     int[][] best;
     ArrayList<Integer> list = new ArrayList<>();
@@ -73,7 +73,7 @@ public class DynamicMinus {
         }
 
         m = sum - target;
-        System.out.println(m);
+//        System.out.println(m);
         best = new int[nums.length + 1][m + 1];
         for (int i = 1; i <= nums.length; i++) {
             for (int j = 1; j <= m; j++) {

@@ -12,7 +12,7 @@ public class Demo01Consumer {
 //            System.out.println(name);
 //        });
         String Name = "李白";
-        method(Name, (String name) -> {
+        method(Name, (name) -> {
             // 消费方式：字符串进行反转输出
             String reName = new StringBuffer(name).reverse().toString();
             System.out.println(reName);

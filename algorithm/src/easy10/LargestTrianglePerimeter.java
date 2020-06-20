@@ -1,4 +1,4 @@
-package demo01;
+package easy10;
 
 import java.util.Arrays;
 
@@ -24,7 +24,7 @@ public class LargestTrianglePerimeter {
             System.out.println("不满足构成三角形，周长为：" + perimeter);
         }
 
-
+        System.out.println(Arrays.toString(new int[]{2,3,4}));
     }
 
     public static int largestPerimeter(int[] A) {

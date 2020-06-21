@@ -19,7 +19,7 @@ public class Demo01 {
 
     public static void main(String[] args) throws ClassNotFoundException {
         // 方法1
-        Class<?> person1 = Class.forName("com.day01.domain.Person");
+        Class person1 = Class.forName("com.day01.domain.Person");
         System.out.println(person1);
 
         // 方法2
@@ -30,6 +30,9 @@ public class Demo01 {
         Person p = new Person();
         Class<? extends Person> person3 = p.getClass();
         System.out.println(person3);
+
+        Class<? extends Person> person5 = new Person().getClass();
+        System.out.println(person5  );
 
         System.out.println(person1 == person2);
         System.out.println(person3 == person2);

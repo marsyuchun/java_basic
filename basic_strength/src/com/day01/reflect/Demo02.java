@@ -22,8 +22,9 @@ import java.lang.reflect.Field;
  * Constructor<?>[] getDeclaredConstructors()
  * 3、获取成员方法们
  * Method[] getMethods()
- *
+ * Method getMethod(String name, 类<?> ... parameterTypes)
  * 4、获取类名
+ * String getName()
  */
 public class Demo02 {
     public static void main(String[] args) throws NoSuchFieldException, IllegalAccessException {
@@ -35,26 +36,29 @@ public class Demo02 {
 //        }
 //
 //        System.out.println("-------------------");
-//
+
 //        Field a = pc.getField("a");
-//        // 获取成员变量a的值
+////        // 获取成员变量a的值
         Person p = new Person();
 //        a.set(p,"kevin");
 //        Object o = a.get(p);
 //        System.out.println(o);
 //        System.out.println(p);
-
-        System.out.println("-------------------");
+//
+//        System.out.println("-------------------");
 
         //  Field[] getDeclareFields() 获取所有的成员变量，不考虑修饰符
         Field[] fields1 = pc.getDeclaredFields();
         for (Field field : fields1) {
-            System.out.println(field);
+            if (field.toString().startsWith("private")){
+                System.out.println(field);
+            }
         }
         // Field getDeclareField(String name)
         Field d = pc.getDeclaredField("d");
         // 忽略访问权限修饰符的安全检查，暴力反射
         d.setAccessible(true);
+        d.set(p,"value");
         Object o = d.get(p);
         System.out.println(o);
 

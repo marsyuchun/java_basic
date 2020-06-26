@@ -45,6 +45,17 @@ public class CalculatorTest {
         Assert.assertEquals(999, add);
     }
 
+    @Test
+    public void testAdd2(){
+        System.out.println("测试执行了");
+        // 1、创建对象
+        Calculator c = new Calculator();
+        // 2、调用add方法
+        int add = c.add(998, 2);
+        // 3、断言类
+        Assert.assertEquals(1000, add);
+    }
+
 
 
 }

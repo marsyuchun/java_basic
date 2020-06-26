@@ -52,6 +52,6 @@ public class Person {
     }
 
     public void eat(String food){
-        System.out.println("eat "+food);
+        System.out.println("我想吃"+food);
     }
 }

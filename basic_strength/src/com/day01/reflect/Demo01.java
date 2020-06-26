@@ -28,11 +28,9 @@ public class Demo01 {
 
         // 方法3
         Person p = new Person();
-        Class<? extends Person> person3 = p.getClass();
+        Class person3 = p.getClass();
         System.out.println(person3);
 
-        Class<? extends Person> person5 = new Person().getClass();
-        System.out.println(person5  );
 
         System.out.println(person1 == person2);
         System.out.println(person3 == person2);

@@ -14,7 +14,7 @@ public class ReflectDemo {
         Class person2 = Person.class;
         System.out.println(person2);
 
-        // 3、对象.getClass（）获取，用于
+        // 3、对象.getClass（）获取，用于获取对象的字节码文件
         Person p = new Person();
         Class person3 = p.getClass();
         System.out.println(person3);

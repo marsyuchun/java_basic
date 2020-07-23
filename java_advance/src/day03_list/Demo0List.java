@@ -1,6 +1,7 @@
 package day03_list;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
@@ -17,7 +18,10 @@ public class Demo0List {
         list.add("a");
 
         System.out.println(list);
-        list.add(6,"ff");
+        Collections.shuffle(list);
+        System.out.println(list);
+
+//        list.add(6,"ff");
 
         Iterator<String> it = list.iterator();
         while (it.hasNext()){

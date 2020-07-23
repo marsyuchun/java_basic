@@ -2,6 +2,7 @@ package day02_collection.collection;
 
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Iterator;
 
@@ -21,6 +22,10 @@ public class IteratorDemo01 {
         cs.add("荆轲");
         cs.add("虞姬");
         Iterator<String> it = cs.iterator();
+        String[] s =new String[2];
+        String[] strings = cs.toArray(s);
+        System.out.println(String.class);
+        System.out.println(Arrays.toString(strings));
 
         while (it.hasNext()) {
             Object next = it.next();

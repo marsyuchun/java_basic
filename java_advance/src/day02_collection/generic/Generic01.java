@@ -13,4 +13,11 @@ public class Generic01<E> {
     public void setName(E name) {
         this.name = name;
     }
+
+    public Generic01(E name) {
+        this.name = name;
+    }
+
+//    public Generic01() {
+//    }
 }

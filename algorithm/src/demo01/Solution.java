@@ -13,7 +13,6 @@ public class Solution {
         System.out.println(num1);
 
 
-
     }
 
     public static int lengthOfLongestSubstring(String s) {

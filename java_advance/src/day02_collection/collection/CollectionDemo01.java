@@ -25,6 +25,7 @@ public class CollectionDemo01 {
         cs.add("虞姬");
         System.out.println(cs);
 
+
         cs.remove("虞姬");
         System.out.println(cs);
 //
@@ -48,7 +49,6 @@ public class CollectionDemo01 {
         System.out.println(cs.isEmpty());
         cs.clear();
         System.out.println(cs.isEmpty());
-
 
 
 

@@ -8,7 +8,7 @@ import java.util.Iterator;
  */
 public class Demo0Generic {
     public static void main(String[] args) {
-        method2();
+        method1();
 
     }
 

@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 /**
  * Created by yanyuchun on 2020/4/2
- *
+ *  set是一个无序的单列集合
  * Set集合演示
  */
 public class Demo03Set {

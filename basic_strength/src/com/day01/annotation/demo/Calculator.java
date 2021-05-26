@@ -26,12 +26,12 @@ public class Calculator {
     }
 
     @Check
-    public void str(){
-        String s =null;
+    public void str() {
+        String s = null;
         s.toString();
     }
-
-    public void show(){
+    @Check
+    public void show() {
         System.out.println("不会写bug...");
     }
 }

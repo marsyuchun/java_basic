@@ -14,16 +14,20 @@ public class Demo01 {
 
     // 2、deprecated注解 ，表示过时
     @Deprecated
-    public void show(){
+    public void show() {
         System.out.println("show 1");
     }
 
-    public void show2(){
+    public void show2() {
         System.out.println("the new method show");
     }
 
-    public void demo(){
-        show();
+
+
+    public static void main(String[] args) {
+        Demo01 demo = new Demo01();
+        demo.show2();
+        demo.show();
     }
 
 }

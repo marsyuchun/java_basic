@@ -11,6 +11,13 @@ public class Person {
     String c;
     private String d;
 
+    public Person(String name, int age, String a, String b) {
+        this.name = name;
+        this.age = age;
+        this.a = a;
+        this.b = b;
+    }
+
     public Person(String name, int age) {
         this.name = name;
         this.age = age;

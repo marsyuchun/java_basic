@@ -27,7 +27,12 @@ public class ReflectDemo4 {
         Method[] methods = personClass.getMethods();
         for (Method method : methods) {
             System.out.println(method);
+            if (method.getName()=="eat"){
+                System.out.println(method.getParameters());
+                System.out.println(method.getClass());
+            }
         }
+
 
 
     }

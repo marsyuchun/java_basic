@@ -8,7 +8,7 @@ import java.lang.reflect.Method;
  *      写一个框架，可以帮我们创建任意类的对象，并且执行其中任意方法
  *
  */
-@ReflectAnnotaiton(className = "com.day01.annotation.ReflectDemo1", methodName ="show" )
+@ReflectAnnotaiton(className = "com.day01.annotation.ReflectDemo2", methodName ="show" )
 public class ReflectInstance {
     public static void main(String[] args) throws Exception {
         /*
@@ -18,7 +18,7 @@ public class ReflectInstance {
         Class<ReflectInstance> ref = ReflectInstance.class;
         // 2、获取上边的注解对象 ，生成了注解的子类对象
 //        * getAnnotation(Class)
-//        //其实就是在内存中生成了一个该注解接口的子类实现对象
+//
 //
 //        public class ProImpl implements Pro{
 //            public String className(){
@@ -28,12 +28,14 @@ public class ReflectInstance {
 //                return "show";
 //            }
 //        }
+        //其实就是在内存中生成了一个该注解接口的子类实现对象
         ReflectAnnotaiton an = ref.getAnnotation(ReflectAnnotaiton.class);
-
+//
         //2、获取注解配置的类和方法
         String className = an.className();
         String methodName = an.methodName();
 
+        System.out.println(className);
         // 3、加载类进内存
         Class cls = Class.forName(className);
 

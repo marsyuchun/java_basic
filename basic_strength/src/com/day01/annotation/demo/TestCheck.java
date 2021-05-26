@@ -24,7 +24,7 @@ public class TestCheck {
 
         // 出现异常记录
         int number = 0;
-        BufferedWriter bw = new BufferedWriter(new FileWriter("basic_strength/src/com/day01/annotation/demo/bug.txt"));
+        BufferedWriter bw = new BufferedWriter(new FileWriter("src/com/day01/annotation/demo/bug.txt",true));
 
         for (Method method : methods) {
             // 3、判断方法上是否有Check注解

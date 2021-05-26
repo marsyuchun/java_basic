@@ -10,10 +10,13 @@ import java.lang.reflect.Constructor;
 public class ReflectDemo03 {
     public static void main(String[] args) throws Exception {
         Class personClass = Person.class;
-        Constructor constructor = personClass.getConstructor(String.class, int.class);
+        Constructor constructor = personClass.getConstructor(String.class, int.class, String.class, String.class);
+
+        Constructor constructor1 = personClass.getConstructor();
+        System.out.println(constructor1);
 
         System.out.println(constructor);
-        Object person = constructor.newInstance("kevin", 30);
+        Object person = constructor.newInstance("kevin", 30, "a", "b");
         System.out.println(person);
 
         System.out.println("===============================");

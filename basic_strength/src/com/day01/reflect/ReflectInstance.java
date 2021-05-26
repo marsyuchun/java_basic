@@ -27,6 +27,7 @@ public class ReflectInstance {
         Properties properties = new Properties();
         // 获取类加载器
         ClassLoader classLoader = ReflectInstance.class.getClassLoader();
+        System.out.println(properties);
         InputStream is = classLoader.getResourceAsStream("classConfig.properties");
         properties.load(is);
         System.out.println(properties);
@@ -45,8 +46,13 @@ public class ReflectInstance {
         Method method = cls.getMethod(method_name,String.class);
 
         // 6、执行对象
-        method.invoke(o,"米粉");
+        method.invoke(o,"apple");
 
+        String[] split = "192.168.1.1|134.123.432.2|123ads".split("\\s*[|]+\\s*");
+        for (String s : split) {
+            System.out.println(s);
+        }
+        System.out.println(Math.pow(10,4));
     }
 
 }

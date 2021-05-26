@@ -3,6 +3,7 @@ package com.day01.reflect;
 import com.day01.domain.Person;
 
 import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
 
 /**
  * Created by yanyuchun on 2020/6/8
@@ -27,21 +28,22 @@ import java.lang.reflect.Field;
  * String getName()
  */
 public class Demo02 {
-    public static void main(String[] args) throws NoSuchFieldException, IllegalAccessException {
+    public static void main(String[] args) throws NoSuchFieldException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
         // 1、获取Person的Class对象
         Class<Person> pc = Person.class;
-//        Field[] fields = pc.getFields();
+        System.out.println("-------------------");
+        Field[] fields = pc.getFields();
 //        for (Field field : fields) {
 //            System.out.println(field);
 //        }
 //
 //        System.out.println("-------------------");
 
-//        Field a = pc.getField("a");
+        Field a = pc.getField("a");
 ////        // 获取成员变量a的值
         Person p = new Person();
-//        a.set(p,"kevin");
-//        Object o = a.get(p);
+        a.set(p,"kevin");
+        Object o = a.get(p);
 //        System.out.println(o);
 //        System.out.println(p);
 //
@@ -58,9 +60,9 @@ public class Demo02 {
         Field d = pc.getDeclaredField("d");
         // 忽略访问权限修饰符的安全检查，暴力反射
         d.setAccessible(true);
-        d.set(p,"value");
-        Object o = d.get(p);
-        System.out.println(o);
+        d.set(p,"values");
+        Object o1 = d.get(p);
+        System.out.println(o1);
 
     }
 
